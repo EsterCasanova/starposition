@@ -5,10 +5,18 @@
     <title>Star position, discos solidarios y música</title>
     <meta name="description" content="Star position es una empresa de team building dedicada a la música especializada en discos solidarios, canciones coorporativas y videoclips.">
     <style>
-      body{
-        width:80%;
-        margin: 0 auto;
-      }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    header,
+    section,
+    footer {
+        margin: 0;
+        padding: 0px; /* tweaked from 0 to 1px */
+    }
+
       h1, h2, p, div{
         text-align: center;
       }
@@ -22,7 +30,61 @@
         float:right;
         margin: 1em;
       }
+      body {
+          -webkit-animation: colorchange 20s infinite;
+          animation: colorchange 20s infinite;
+      }
+      @-webkit-keyframes colorchange {
+           0%  {background: #33FFF3;}
+          15%  {background: #78281F;}
+          45%  {background: #117A65;}
+          70%  {background: #DC7633;}
+          90%  {background: #9B59B6;}
+          100% {background: #33FFF3;}
+      }
+      @keyframes colorchange {
+          0%  {background: #33FFF3;}
+         15%  {background: #78281F;}
+         45%  {background: #117A65;}
+         70%  {background: #DC7633;}
+         90%  {background: #9B59B6;}
+         100% {background: #33FFF3;}
+      }
+      section {
+        padding: 4em 0;
+      }
+      .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+      }
 
+      .text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .content{
+        max-width: 80%;
+      }
+
+      .grid  p {
+        color: #000;
+        align-items: center;
+      }
+
+
+      .image-double > img {
+        max-width: 70%;
+        text-align: center;
+      }
+
+      /* .image-all > img {
+        max-width: 115%;
+        margin-left: -35%;
+      } */
 
     </style>
   </head>
@@ -30,7 +92,47 @@
     <h1>Star position, solidarios con la música</h1>
     <h2>Trabajamos para divertiros</h2>
     <p>Estamos desarrollando esta página, si has llegado hasta aquí llamanos</p>
-    <div><img src="images/logo.jpg" alt="Logo coorporativo star position"></div>
+    <div><img src="images/logo.png" alt="Logo coorporativo star position"></div>
+    <section class="grid">
+      <div class="image-all"><img src="images/two.jpg" alt=""></div>
+      <div class="text">
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ea expedita praesentium quo laborum veritatis, fugit iusto magni itaque ipsa explicabo atque et, harum nesciunt, laboriosam officiis. Labore perferendis, possimus.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati tenetur, ipsum commodi odio ullam. Ratione amet aliquam voluptates praesentium similique repellat dolor laudantium quidem, cupiditate fugiat provident tempore nemo, magnam?</p>
+        </div>
+      </div>
+    </section>
+    <section class="grid">
+      <div class="text">
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ea expedita praesentium quo laborum veritatis, fugit iusto magni itaque ipsa explicabo atque et, harum nesciunt, laboriosam officiis. Labore perferendis, possimus.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati tenetur, ipsum commodi odio ullam. Ratione amet aliquam voluptates praesentium similique repellat dolor laudantium quidem, cupiditate fugiat provident tempore nemo, magnam?</p>
+        </div>
+      </div>
+      <div class="image-double">
+        <img src="images/two.png" alt="">
+      </div>
+    </section>
+    <section class="grid">
+      <div class="image-double"><img src="images/one.png" alt=""></div>
+      <div class="text">
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ea expedita praesentium quo laborum veritatis, fugit iusto magni itaque ipsa explicabo atque et, harum nesciunt, laboriosam officiis. Labore perferendis, possimus.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati tenetur, ipsum commodi odio ullam. Ratione amet aliquam voluptates praesentium similique repellat dolor laudantium quidem, cupiditate fugiat provident tempore nemo, magnam?</p>
+        </div>
+      </div>
+    </section>
+    <section class="grid">
+      <div class="text">
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ea expedita praesentium quo laborum veritatis, fugit iusto magni itaque ipsa explicabo atque et, harum nesciunt, laboriosam officiis. Labore perferendis, possimus.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati tenetur, ipsum commodi odio ullam. Ratione amet aliquam voluptates praesentium similique repellat dolor laudantium quidem, cupiditate fugiat provident tempore nemo, magnam?</p>
+        </div>
+      </div>
+      <div class="image-all">
+        <img src="images/two.jpg" alt="">
+      </div>
+    </section>
     <footer><span><strong>Telf.</strong> 617096340</span><span><strong>Email.</strong> rock@starposition.es</span></footer>
   </body>
 </html>
